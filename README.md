@@ -1,4 +1,5 @@
-# Kubernetes-CLI-Scriptshistory
+# Kubernetes-CLI-Scripts
+
 kubectl get no
 kubectl get po -o wide
 kubectl get ns
