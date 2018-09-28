@@ -29,3 +29,15 @@ kubectl describe
  kubectl get clusterroles admin -o yml
  
  kubectl get clusterroles admin -o json
+
+Describe specif pod
+kubectl get po/chartmuseum-chartmuseum-cf5c7fff-fpr2b -o yaml
+
+List all images
+
+ kubectl get pods --all-namespaces -o jsonpath="{..image}" -o json
+ 
+ kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].image}"
+ 
+ https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/
+ 
