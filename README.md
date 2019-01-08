@@ -1,5 +1,14 @@
 # Kubernetes-CLI-Scripts
 
+# Kube config
+
+#get nodes
+
+#get pods
+
+#get deployment
+#get service
+# 
 kubectl get no
 kubectl get po -o wide
 kubectl get ns
