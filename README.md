@@ -1,7 +1,14 @@
 # Kubernetes-CLI-Scripts
 
 # Kube config
+kubectl config view
 kubectl config current-context
+kubectl config use-context k8s.domain.com
+
+example
+kubectl config --kubeconfig=config-demo use-context exp-scratch
+Note: config-demo -- is a file which has multiple cluste info
+
 
 #config map
 describe config map
