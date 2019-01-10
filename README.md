@@ -4,6 +4,8 @@
 kubectl config view
 kubectl config current-context
 kubectl config use-context k8s.domain.com
+kubectl config get-context
+
 
 example
 kubectl config --kubeconfig=config-demo use-context exp-scratch
