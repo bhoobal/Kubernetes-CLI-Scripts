@@ -1,6 +1,20 @@
 # Kubernetes-CLI-Scripts
 
 # Kube config
+kubectl config current-context
+
+#config map
+describe config map
+kubectl describe cm aws-auth -n kube-system
+
+#get config map
+kubectl get cm aws-auth -n kube-system
+
+#apply yaml
+kubectl apply -f .\configmap.yaml
+
+
+
 
 #get nodes
 
