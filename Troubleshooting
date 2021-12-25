@@ -1,0 +1,19 @@
+# Issues while connecting
+root@i-pc:~# kubectl get nodes
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+
+## fix
+Its missing kube config file 
+
+Copy config file 
+root@i-pc:/.kube# cp /mnt/c/Users/bhoob/.kube/config .
+
+root@i-pc:/.kube# kubectl --kubeconfig .kube/config  get nodes
+
+root@i-pc:/# kubectl --kubeconfig .kube/config  get nodes
+NAME             STATUS   ROLES                  AGE   VERSION
+docker-desktop   Ready    control-plane,master   20m   v1.22.4
+
+to manage multiple clusters use --kubeconfig param
+
+
